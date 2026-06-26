@@ -4,13 +4,13 @@
 
 Create a Render Blueprint from this repo. It uses `render.yaml`.
 
-Set this backend env var after Vercel gives you the frontend URL:
+Set this backend env var after Netlify gives you the frontend URL:
 
 ```txt
 CORS_ORIGINS=https://your-site.netlify.app
 ```
 
-## Frontend: Vercel
+## Frontend: Netlify
 
 Use:
 
@@ -20,7 +20,7 @@ Install Command: npm install
 Build Command: npm run build
 ```
 
-Set these Vercel env vars:
+Set these Netlify env vars:
 
 ```txt
 BACKEND_API_URL=https://your-render-backend.onrender.com
