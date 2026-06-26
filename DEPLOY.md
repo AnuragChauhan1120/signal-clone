@@ -7,7 +7,7 @@ Create a Render Blueprint from this repo. It uses `render.yaml`.
 Set this backend env var after Vercel gives you the frontend URL:
 
 ```txt
-CORS_ORIGINS=https://your-vercel-app.vercel.app
+CORS_ORIGINS=https://your-site.netlify.app
 ```
 
 ## Frontend: Vercel
