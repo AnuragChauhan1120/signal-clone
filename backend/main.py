@@ -8,7 +8,11 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
-origins = os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
+raw_origins = os.getenv(
+    "CORS_ORIGINS",
+    "http://localhost:3000,http://127.0.0.1:3000,http://127.0.0.1:3002",
+)
+origins = [origin.strip().rstrip("/") for origin in raw_origins.split(",") if origin.strip()]
 
 app = FastAPI(title="Signal Clone Backend")
 
