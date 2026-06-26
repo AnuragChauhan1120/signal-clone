@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.log
+backend/.env
+backend/signal_clone.db
+frontend/.env.local
+frontend/.next/
+frontend/node_modules/
